@@ -1,0 +1,20 @@
+{{!< default}}
+
+<section role="main" id="mogan-content-overview"{{#if @blog.cover}} style="background-image:url('{{@blog.cover}}');"{{/if}}>
+  {{#foreach posts}}
+    <article>
+      <div class="mogan-post-preview colored-border {{post_class}}">
+
+        <h2>{{title}}</h2>
+
+        <div class="content">
+          {{content words="79"}}
+        </div>
+
+        <a href="{{url}}" class="button accent">View post</a>
+      </div>
+    </article>
+  {{/foreach}}
+
+  {{pagination}}
+</section>

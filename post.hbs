@@ -1,0 +1,51 @@
+{{!< default}}
+
+<section id="mogan-content-detail" role="main">
+  <article class="mogan-post-detail colored-border {{post_class}}" itemscope="" itemtype="http://schema.org/BlogPosting">
+    <div>
+      {{#post}}
+        <header class="container">
+          <h1 itemprop="name headline">{{{title}}}</h1>
+
+          <div class="meta">
+            <span>Posted on </span>
+            <time datetime="{{date format='YYYY-MM-DD'}}" itemprop="datePublished">{{date format="MMMM D, YYYY"}}</time><br />
+            {{#if tags}}<span>{{tags prefix="in " separator=", "}}</span> {{/if}}
+            <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+              by <span itemprop="name"><a class="hide_link" href="https://plus.google.com/116206392060404415211?rel=author" itemprop="url" rel="author" target="_blank">{{author}}</a></span>
+            </span>
+          </div>
+        </header>
+
+        <section class="content" itemprop="articleBody">{{content}}</section>
+
+        <footer class="container">
+          <section class="author">
+            {{#if author.image}}<img src="{{author.image}}" width="90" />{{/if}}
+            <h3>{{author.name}}</h3>
+            {{#if author.bio}}<p>{{author.bio}}</p>{{/if}}
+            <ul class="author-meta clearfix">
+              {{#if author.location}}<li>{{author.location}}</li>{{/if}}
+              {{#if author.website}}<li><a href="{{author.website}}">{{author.website}}</a></li>{{/if}}
+            </ul>
+          </section>
+
+          <section class="container">
+            <h3>Share this post</h3>
+            <a class="button icon-twitter" href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+              <span class="hidden">Twitter</span>
+            </a>
+            <a class="button icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+              <span class="hidden">Facebook</span>
+            </a>
+            <a class="button icon-googleplus" href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <span class="hidden">Google+</span>
+            </a>
+          </section>
+        </footer>
+      {{/post}}
+
+      {{> disquss}}
+    </div>
+  </article>
+</section>
