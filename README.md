@@ -1,5 +1,7 @@
 ### My Ghost Powered Blog
 
+![Adam McArthur Website](http://imgkk.com/i/44qg.png "http://adammcarthur.net")
+
 This is a repository for my website located at [http://adammcarthur.net](http://adammcarthur.net).
 
 The blog is powered by a relatively new blogging platform called [Ghost](https://ghost.org/), which runs on node.js. It's unique design is credit to [Kevin Jannis](https://github.com/KevinJannis)'s awesome work.
