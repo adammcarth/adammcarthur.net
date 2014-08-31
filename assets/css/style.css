@@ -912,6 +912,21 @@ h6 {
   }
 }
 
+#rainbow-border {
+  position: relative;
+  width: 100%;
+  height: 7px;
+  top: 0;
+  left: 0;
+  background: #000;
+  overflow: hidden;
+}
+
+#rainbow-border .palette {
+  height: 7px;
+  position: absolute;
+}
+
 #mogan-content {
   position: fixed;
   top: 0;
