@@ -20,6 +20,13 @@ body {
   margin: 0;
 }
 
+/**
+ * Device friendly touch interaction for home page.
+ */
+html.home-template {
+  background: #9c9ea3;
+}
+
 /* HTML5 display definitions
    ========================================================================== */
 /**
