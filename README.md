@@ -1,6 +1,6 @@
 ### My Ghost Powered Blog
 
-![Adam McArthur Website](http://imgkk.com/i/44qg.png "http://adammcarthur.net")
+![Adam McArthur Website](http://imgkk.com/i/nrys.jpg "http://adammcarthur.net")
 
 This is a repository for my website located at [http://adammcarthur.net](http://adammcarthur.net).
 
