@@ -1,5 +1,11 @@
 .content p {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.mogan-post-preview p, .mogan-post-preview li {
   font-size: 19px;
+  line-height: 1.33333em;
 }
 
 .mogan-post-preview {
@@ -52,7 +58,7 @@
   border: none;
 }
 .mogan-post-detail > div {
-  max-width: 1440px;
+  margin-right: 30px;
 }
 .mogan-post-detail header {
   text-align: center;
@@ -61,9 +67,11 @@
 }
 .mogan-post-detail header h1 {
   margin-bottom: 0;
+  font-size: 60px;
 }
 .mogan-post-detail header .meta {
-  font-size: 15px;
+  font-size: 22px;
+  line-height: 30px;
   font-style: italic;
   font-family: "Vollkorn", serif;
   color: #a7a7a7;
@@ -77,29 +85,27 @@
 }
 .mogan-post-detail .content img,
 .mogan-post-detail .content .fluid-width-video-wrapper {
-  margin: 30px 0;
+  margin: 20px 0;
 }
+
 @media screen and (min-width: 1120px) {
   .mogan-post-detail .content img,
   .mogan-post-detail .content .fluid-width-video-wrapper {
-    max-width: 800px;
-    width: 800px;
-    margin: 30px -90px;
+    margin: 35px 0px;
   }
 }
 .mogan-post-detail header,
 .mogan-post-detail .content,
 .mogan-post-detail footer > .author {
   position: relative;
-  max-width: 660px;
+  max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
 }
-.mogan-post-detail header:after,
-.mogan-post-detail .content:after,
-.mogan-post-detail footer > .author:after {
+
+.mogan-post-detail .content:after {
   content: " ";
   position: absolute;
   left: 0;
@@ -114,7 +120,7 @@
   text-align: center;
 }
 .mogan-post-detail footer section {
-  padding: 30px 0;
+  padding: 40px 0;
 }
 .mogan-post-detail .author img {
   -webkit-border-radius: 50%;
@@ -148,4 +154,158 @@
 
 .hide_link:hover {
   color: #a7a7a7;
+}
+
+#author-wrapper {
+  display: inline-block;
+  background: #FFFCEA;
+  border: 1px solid #DBD5C4;
+  padding: 20px 20px 20px 15px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.author-image {
+  width: 100px;
+  height: 100px;
+  float:left;
+  margin-top: 5px;
+}
+
+.author-info {
+  float: left;
+  width: 495px;
+  text-align: left !important;
+  margin-left: 20px;
+}
+
+.author-info li a:hover {
+  text-decoration: underline;
+}
+
+.author-info h3 {
+  margin-top: 0;
+}
+
+.author-info p {
+  margin-top: 3px;
+  margin-bottom: 8px;
+}
+
+.inline-post-image {
+  float: left;
+  padding-right: 10px;
+}
+
+.inline-post-image img {
+  margin: 12px !important;
+  padding: 0 !important;
+}
+
+.post.page {
+  max-width: 720px !important;
+  margin: 0px auto;
+}
+
+.post.page h1 {
+  font-size: 40px;
+}
+
+.post.page p {
+  font-size: 19px;
+  line-height: 1.333333em;
+}
+
+.post.page .content:after {
+  background: #f9f9f9;
+}
+
+/* Responsive Endpoints */
+@media( max-width:1500px ) {
+  .mogan-post-detail header,
+  .mogan-post-detail .content,
+  .mogan-post-detail footer > .author {
+    max-width: 840px;
+  }
+}
+
+@media( max-width:1400px ) {
+  .mogan-post-detail header h1 {
+    font-size: 50px;
+  }
+}
+
+@media( max-width:1200px ) {
+  .content p {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  ul {
+    margin-left: 0px;
+  }
+
+  li {
+    padding-left: 0px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .mogan-post-detail header .meta {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .mogan-post-detail > div {
+    margin-right: 0px;
+    padding: 0 10px;
+  }
+}
+
+@media( max-width:1000px ) {
+  .mogan-post-detail header h1 {
+    font-size: 40px;
+  }
+
+  .mogan-post-detail header .meta {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .mogan-post-detail header {
+    margin-bottom: 0px;
+  }
+
+  #author-wrapper {
+    width: 100%;
+  }
+
+  #author-wrapper #location {
+    display: none;
+  }
+
+  .author-info {
+    width: 90%;
+  }
+
+  .author-image {
+    display: none;
+  }
+
+  #author-wrapper a {
+    display: none;
+  }
+}
+
+@media( max-width:840px ) {
+  .mogan-post-detail header .meta span.newline {
+    display: block;
+  }
+}
+
+@media( max-width:440px ) {
+  .mogan-post-detail > div {
+    padding: 0 2px;
+  }
 }

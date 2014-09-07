@@ -418,6 +418,18 @@ optgroup {
   font-weight: bold;
 }
 
+.about-me-image {
+  width: 800px;
+  margin-left: -80px;
+}
+
+@media( max-width:1270px ) {
+  .about-me-image {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
 /* Tables
    ========================================================================== */
 /**
@@ -686,7 +698,7 @@ select {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -837,6 +849,9 @@ h6 {
   padding: 8px 25px;
   border: none;
 }
+#mogan-header nav a.menu_link {
+  font-family: "Vollkorn", serif;
+}
 #mogan-header nav a:hover, a.menu_item_active {
   background: #2a2a2a;
 }
@@ -925,13 +940,8 @@ h6 {
   height: 7px;
   top: 0;
   left: 0;
-  background: #000;
+  background: #d67545;
   overflow: hidden;
-}
-
-#rainbow-border .palette {
-  height: 7px;
-  position: absolute;
 }
 
 #mogan-content {
@@ -1048,26 +1058,15 @@ h6 {
 
 #mogan-post-comments {
   position: relative;
-  max-width: 660px;
+  max-width: 1024px;
   padding: 30px 20px;
-  margin: 30px auto 0 auto;
+  margin: 0px auto;
 }
 
 #mogan-post-comments .container > h3,
 #mogan-post-comments .container > p {
   display: block;
   text-align: center;
-}
-#mogan-post-comments:after {
-  content: " ";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 1px;
-  width: 100px;
-  margin: auto;
-  background: #a7a7a7;
 }
 
 /* Proejcts Page */
@@ -1110,3 +1109,18 @@ h6 {
   color: #333;
 }
 
+ul {
+  margin-left: 20px;
+}
+
+li {
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 8px;
+  list-style: square;
+  padding-left: 5px;
+}
+
+ul li:last-child {
+  margin-bottom: 0px;
+}

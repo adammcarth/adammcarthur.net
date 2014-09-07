@@ -1,45 +1,35 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml/DTD/xhtml-transitional.dtd">
 <html class="{{body_class}}">
 <head>
-  {{! Document Settings }}
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-  {{! Page Meta }}
   <title>{{meta_title}}</title>
   <meta name="description" content="{{meta_description}}" />
-
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <link rel="shortcut icon" href="{{asset "img/favicon.ico"}}">
-
-  {{! Styles'n'Scripts }}
+  <!-- Stylesheets -->
   <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
   <link rel="stylesheet" type="text/css" href="{{asset "css/post.css"}}" />
   <link rel="stylesheet" type="text/css" href="{{asset "css/tags.css"}}" />
+  <!-- Critical Scripts -->
   <link href='//fonts.googleapis.com/css?family=Crimson+Text:400,700,400italic,700italic|Vollkorn' rel='stylesheet' type='text/css'>
-
+  <script type="text/javascript" src="{{asset "js/retina.min.js"}}"></script>
   <!--[if lt IE 9]>
     <script src="{{asset "js/html5shiv.js"}}"></script>
   <![endif]-->
-
-  {{! Ghost outputs important style and meta data with this tag }}
+  <!-- Ghost Head Data -->
   {{ghost_head}}
 </head>
 <body class="{{body_class}}">
-
   {{> header}}
-
   <div id="mogan-content">
     {{{body}}}
   </div><!-- /#mogan-content -->
-
   {{ghost_foot}}
-
+  <!-- Non-Critical Javascript -->
   <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
   <script async type="text/javascript" src="{{asset "js/index.js"}}"></script>
-
   {{> analytics}}
 </body>
 </html>
