@@ -11,5 +11,14 @@
       e.preventDefault();
       $('body').toggleClass('show-menu');
     });
+
+    $(".shiny").shiningImage({
+      color : "#FFFFFF",
+      opacity : 0.25,
+      playOnLoad: false,
+      scale : 0.5,
+      speed : 20,
+      delay : 3000
+    });
   });
 })(jQuery, window);

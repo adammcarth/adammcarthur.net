@@ -3,6 +3,46 @@
   line-height: 30px;
 }
 
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: auto;
+}
+
+.content h1 {
+  font-size: 42px;
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+.content h2 {
+  font-size: 36px;
+}
+
+.content h3 {
+  font-size:30px;
+}
+
+.content h4 + p, .content h5 + p, .content h6 + p {
+  margin-top: -25px;
+}
+
+.content h4 {
+  margin-top: 20px;
+  font-size: 26px;
+  color: #777777;
+}
+
+.content h5 {
+  font-size: 22px;
+  color: #777777;
+}
+
+.content h6 {
+  font-size: 18px;
+  color: #777777;
+}
+
 .mogan-post-preview p, .mogan-post-preview li {
   font-size: 19px;
   line-height: 1.33333em;
@@ -154,6 +194,8 @@
 
 .hide_link:hover {
   color: #a7a7a7;
+  border-bottom: 0;
+  font-weight: bold;
 }
 
 #author-wrapper {

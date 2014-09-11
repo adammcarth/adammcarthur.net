@@ -220,15 +220,15 @@ samp {
   font-size: 1em;
 }
 
-p code {
-  font-size: 15px;
-  background: #E5E5E5;
-  color: #d87547;
-  padding: 3px 5px 2px 5px;
-  white-space: pre-wrap;
-  border: 1px solid #BBB;
-  border-radius: 2px;
-  font-weight: bold;
+p code, li code {
+  margin: 0 2px;
+  padding: 2px 5px;
+  white-space: nowrap;
+  border: 1px solid #C2C2C2;
+  background-color: #E9E9E9;
+  border-radius: 3px;
+  color: #353535;
+  font-size: 16px;
 }
 
 /* Forms
@@ -465,15 +465,12 @@ body {
 }
 
 a {
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
   color: #d87547;
   text-decoration: none;
 }
 a:hover {
   color: #c35a29;
+  border-bottom: 2px dotted #c35a29;
 }
 
 img {
@@ -1117,10 +1114,52 @@ li {
   font-size: 20px;
   line-height: 23px;
   margin-bottom: 8px;
-  list-style: square;
   padding-left: 5px;
+}
+
+ul li {
+  list-style: square;
 }
 
 ul li:last-child {
   margin-bottom: 0px;
+}
+
+/* Props to "T-Bone" Boostrap */
+table.stripped {
+  border: 1px solid #ddd;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table.stripped th {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  vertical-align: bottom;
+  border: 1px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  font-weight: bold;
+}
+
+table.stripped td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table.stripped > tbody > tr:nth-child(odd) > td,
+table.stripped > tbody > tr:nth-child(odd) > th {
+  background-color: #F1F1F1;
+}
+
+table.stripped code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #d87547;
+  border-radius: 4px;
+  font-weight: bold;
 }
