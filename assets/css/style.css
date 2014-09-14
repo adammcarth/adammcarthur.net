@@ -245,18 +245,8 @@ hr {
   height: 0;
 }
 
-/**
- * Contain overflow in all browsers.
- */
 pre {
-  overflow: auto;
-  background: #f8f8ff !important;
-  padding: 20px;
-  white-space: pre-wrap;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  border: 1px solid #DDD;
+  max-height: 600px;
 }
 
 /**
