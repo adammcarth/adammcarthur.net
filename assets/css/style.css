@@ -36,7 +36,11 @@ html.home-template {
   font-family: 'Crimson Text';
   font-style: normal;
   font-weight: 400;
-  src: local('Crimson Text'), local('CrimsonText-Roman'), url(../fonts/Crimson_Text/roman.woff2) format('woff2');
+  src: local('Crimson Text'), local('CrimsonText-Roman'), url(../fonts/Crimson_Text/roman.eot);
+  src: url(../fonts/Crimson_Text/roman.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/Crimson_Text/roman.woff2) format('woff2'),
+       url(../fonts/Crimson_Text/roman.woff) format('woff'),
+       url(../fonts/Crimson_Text/roman.svg#crimson_textroman) format('svg');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -44,7 +48,11 @@ html.home-template {
   font-family: 'Crimson Text';
   font-style: normal;
   font-weight: 700;
-  src: local('Crimson Text Bold'), local('CrimsonText-Bold'), url(../fonts/Crimson_Text/bold.woff2) format('woff2');
+  src: local('Crimson Text Bold'), local('CrimsonText-Bold'), url(../fonts/Crimson_Text/bold.eot);
+  src: url(../fonts/Crimson_Text/bold.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/Crimson_Text/bold.woff2) format('woff2'),
+       url(../fonts/Crimson_Text/bold.woff) format('woff'),
+       url(../fonts/Crimson_Text/bold.svg#crimson_textbold) format('svg');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -52,7 +60,11 @@ html.home-template {
   font-family: 'Crimson Text';
   font-style: italic;
   font-weight: 400;
-  src: local('Crimson Text Italic'), local('CrimsonText-Italic'), url(../fonts/Crimson_Text/italic.woff2) format('woff2');
+  src: local('Crimson Text Italic'), local('CrimsonText-Italic'), url(../fonts/Crimson_Text/italic.eot);
+  src: url(../fonts/Crimson_Text/italic.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/Crimson_Text/italic.woff2) format('woff2'),
+       url(../fonts/Crimson_Text/italic.woff) format('woff'),
+       url(../fonts/Crimson_Text/italic.svg#crimson_textitalic) format('svg');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -60,7 +72,11 @@ html.home-template {
   font-family: 'Crimson Text';
   font-style: italic;
   font-weight: 700;
-  src: local('Crimson Text Bold Italic'), local('CrimsonText-BoldItalic'), url(../fonts/Crimson_Text/bold_italic.woff2) format('woff2');
+  src: local('Crimson Text Bold Italic'), local('CrimsonText-BoldItalic'), url(../fonts/Crimson_Text/bold_italic.eot);
+  src: url(../fonts/Crimson_Text/bold_italic.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/Crimson_Text/bold_italic.woff2) format('woff2'),
+       url(../fonts/Crimson_Text/bold_italic.woff) format('woff'),
+       url(../fonts/Crimson_Text/bold_italic.svg#crimson_textbold_italic) format('svg');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
@@ -69,7 +85,11 @@ html.home-template {
   font-family: 'Vollkorn';
   font-style: normal;
   font-weight: 400;
-  src: local('Vollkorn Regular'), local('Vollkorn-Regular'), url(../fonts/Vollkorn/regular.woff2) format('woff2');
+  src: local('Vollkorn Regular'), local('Vollkorn-Regular'), url(../fonts/Vollkorn/regular.eot);
+  src: url(../fonts/Vollkorn/regular.eot?#iefix) format('embedded-opentype'),
+       url(../fonts/Vollkorn/regular.woff2) format('woff2'),
+       url(../fonts/Vollkorn/regular.woff) format('woff'),
+       url(../fonts/Vollkorn/regular.svg#vollkornregular) format('svg');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
