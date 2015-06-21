@@ -4,8 +4,22 @@
 
 This is a repository for my website located at [http://adammcarthur.net](http://adammcarthur.net).
 
-The blog is powered by a relatively new blogging platform called [Ghost](https://ghost.org/), which runs on node.js. Much of it's unique design is credit to [Kevin Jannis](https://github.com/KevinJannis)'s awesome work.
+My blog is powered by a relatively new blogging platform called [Ghost](https://ghost.org), which runs on Node.js. The design builds on top of an original idea by [Kevin Jannis](http://www.kevinjannis.com).
 
-You're more than welcome to make a contribution if you would like to. Same process as usual - fork this repository, make your changes and send in a pull request outlining your changes. Note that most files that power the website have been hidden from this public repository, either for security purposes or they are not worth being kept in version control (eg - Ghost framework files, node modules and databases).
+Big shout out to [David Lanham](http://davidlanham.com). He's the original designer of many Facebook sticker packs, including the Baach sheep character featured on this website. David was good enough to send me some of his designs. Don't be fooled by the fleece - this sheep is *all* attitude.
 
-This website is hosted on Amazon EC2, and media is delivered via Amazon S3.
+### Contributing
+
+You're more than welcome to make a contribution if you would like to. Note that this is just the theme for my blog - core ghost files have been left out.
+
+1. Checkout a new branch, eg: `git checkout -b my-new-feature`
+2. CD to this theme folder in terminal
+3. Run `npm install`
+4. Run `grunt` initially, and then again after making changes to any CSS/JS files
+5. Commit and send in a pull request outlining your changes
+
+If you want to preview your changes, [download ghost](https://ghost.org/download) and load this theme into your own blog. Theme folders live in `/content/themes`. Ghost is started locally by running `npm start` in the Ghost installation root directory.
+
+### Other Info
+
+This website is hosted on Google Compute Engine, with static content cached through Cloudflare.

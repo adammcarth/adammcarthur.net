@@ -1,5 +1,4 @@
 {{!< default}}
-<div id="rainbow-border"></div>
 <section id="mogan-content-detail" role="main">
   <article class="mogan-post-detail colored-border {{post_class}}" itemscope="" itemtype="http://schema.org/BlogPosting">
     <div>
@@ -8,34 +7,14 @@
           <h1 itemprop="name headline">{{{title}}}</h1>
 
           <div class="meta">
-            Written by <span itemprop="author" itemscope="" itemtype="http://schema.org/Person"><span itemprop="name"><a class="hide_link" href="https://plus.google.com/116206392060404415211?rel=author" itemprop="url" rel="author" target="_blank">{{author}}</a></span></span> <span class="newline">on <time datetime="{{date format='YYYY-MM-DD'}}" itemprop="datePublished">{{date format="MMMM D, YYYY"}}</time></span><br />
+            <div class="author_name_hide">Written by <span itemprop="author" itemscope="" itemtype="http://schema.org/Person"><span itemprop="name">Adam McArthur</span></span> on </div><time datetime="{{date format='YYYY-MM-DD'}}" itemprop="datePublished">{{date format="MMMM D, YYYY"}}</time>
           </div>
         </header>
 
         <section class="content" itemprop="articleBody">{{content}}</section>
-
-        <footer class="container">
-          <section class="author">
-            <div id="author-wrapper">
-              <div class="author-image">
-                <img src="{{asset "img/adam-mcarthur-xavier-college.png"}}" alt="Adam McArthur at Xavier College" width="90" />
-              </div><!-- /.author-image -->
-              <div class="author-info">
-                <h3 style="float:left;">{{author.name}}</h3>{{#if author.location}}<li id="location" style="float:right; color:#a7a7a7;">{{author.location}}</li>{{/if}}
-                <div style="clear:both;"></div>
-                {{#if author.bio}}<p>{{author.bio}}</p>{{/if}}
-                <ul class="author-meta clearfix">
-                  {{#if author.website}}<li><a href="{{author.website}}">{{author.website}}</a></li>{{/if}}
-                </ul>
-              </div><!-- /.author-info -->
-              <div style="clear:both;"></div>
-            </div><!-- /#author-wrapper -->
-            <div style="clear:both;"></div>
-          </section>
-        </footer>
       {{/post}}
-
-      {{> disquss}}
     </div>
+
+    {{> disquss}}
   </article>
 </section>
