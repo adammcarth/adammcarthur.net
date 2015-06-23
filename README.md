@@ -22,4 +22,4 @@ If you want to preview your changes, [download ghost](https://ghost.org/download
 
 ### Other Info
 
-This website is hosted on Google Compute Engine, with static content cached through Cloudflare.
+This website is hosted with Digital Ocean, with static content cached through Cloudflare.
