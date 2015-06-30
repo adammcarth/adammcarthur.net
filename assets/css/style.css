@@ -33,67 +33,7 @@ html.home-template {
 
 /* Remember that fonts are loaded from the 'assets/css/compiled' directory, not 'assets/css' */
 
-/* Crimson Text */
-@font-face {
-  font-family: 'Crimson Text';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Crimson Text'), local('CrimsonText-Roman'), url(../../fonts/Crimson_Text/roman.eot);
-  src: url(../../fonts/Crimson_Text/roman.eot?#iefix) format('embedded-opentype'),
-       url(../../fonts/Crimson_Text/roman.woff2) format('woff2'),
-       url(../../fonts/Crimson_Text/roman.woff) format('woff'),
-       url(../../fonts/Crimson_Text/roman.svg#crimson_textroman) format('svg');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-
-@font-face {
-  font-family: 'Crimson Text';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Crimson Text Bold'), local('CrimsonText-Bold'), url(../../fonts/Crimson_Text/bold.eot);
-  src: url(../../fonts/Crimson_Text/bold.eot?#iefix) format('embedded-opentype'),
-       url(../../fonts/Crimson_Text/bold.woff2) format('woff2'),
-       url(../../fonts/Crimson_Text/bold.woff) format('woff'),
-       url(../../fonts/Crimson_Text/bold.svg#crimson_textbold) format('svg');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-
-@font-face {
-  font-family: 'Crimson Text';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Crimson Text Italic'), local('CrimsonText-Italic'), url(../../fonts/Crimson_Text/italic.eot);
-  src: url(../../fonts/Crimson_Text/italic.eot?#iefix) format('embedded-opentype'),
-       url(../../fonts/Crimson_Text/italic.woff2) format('woff2'),
-       url(../../fonts/Crimson_Text/italic.woff) format('woff'),
-       url(../../fonts/Crimson_Text/italic.svg#crimson_textitalic) format('svg');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-
-@font-face {
-  font-family: 'Crimson Text';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Crimson Text Bold Italic'), local('CrimsonText-BoldItalic'), url(../../fonts/Crimson_Text/bold_italic.eot);
-  src: url(../../fonts/Crimson_Text/bold_italic.eot?#iefix) format('embedded-opentype'),
-       url(../../fonts/Crimson_Text/bold_italic.woff2) format('woff2'),
-       url(../../fonts/Crimson_Text/bold_italic.woff) format('woff'),
-       url(../../fonts/Crimson_Text/bold_italic.svg#crimson_textbold_italic) format('svg');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-
-/* Vollkorn */
-@font-face {
-  font-family: 'Vollkorn';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Vollkorn Regular'), local('Vollkorn-Regular'), url(../../fonts/Vollkorn/regular.eot);
-  src: url(../../fonts/Vollkorn/regular.eot?#iefix) format('embedded-opentype'),
-       url(../../fonts/Vollkorn/regular.woff2) format('woff2'),
-       url(../../fonts/Vollkorn/regular.woff) format('woff'),
-       url(../../fonts/Vollkorn/regular.svg#vollkornregular) format('svg');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
+/* 30 Jun, 2015: Fonts now loaded through Typekit */
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -520,7 +460,7 @@ th {
 html,
 body {
   background: #212121;
-  font-family: "Crimson Text", sans-serif;
+  font-family: "Crimson", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.44444em;
@@ -656,8 +596,11 @@ select {
 /* Loaded from 'assets/css/compiled', not 'assets/css' */
 @font-face {
   font-family: 'icomoon';
-  src: url("../../fonts/icomoon/icomoon.eot?v35oq1");
-  src: url("../../fonts/icomoon/icomoon.eot?#iefixv35oq1") format("embedded-opentype"), url("../../fonts/icomoon/icomoon.woff?v35oq1") format("woff"), url("../../fonts/icomoon/icomoon.ttf?v35oq1") format("truetype"), url("../../fonts/icomoon/icomoon.svg?v35oq1#icomoon") format("svg");
+  src:url('../../fonts/icomoon.eot?-7028zt');
+  src:url('../../fonts/icomoon.eot?#iefix-7028zt') format('embedded-opentype'),
+    url('../../fonts/icomoon.ttf?-7028zt') format('truetype'),
+    url('../../fonts/icomoon.woff?-7028zt') format('woff'),
+    url('../../fonts/icomoon.svg?-7028zt#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -684,14 +627,8 @@ select {
 .icon-menu:before {
   content: "\e9bd";
 }
-.icon-link:before {
-  content: "\e9cb";
-}
 .icon-cross:before {
   content: "\ea0f";
-}
-.icon-terminal:before {
-  content: "\ea81";
 }
 .icon-twitter:before {
   content: "\ea91";
