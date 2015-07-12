@@ -272,6 +272,10 @@
   .mogan-post-detail {
     width: 560px;
   }
+  
+  .mogan-post-detail > div {
+    padding: 0 20px;
+  }
 }
 
 @media (max-width: 880px) {
@@ -280,7 +284,7 @@
   }
 
   .mogan-post-detail > div {
-    padding: 0 30px;
+    padding: 0 10px;
   }
 
   .author_name_hide {
@@ -315,13 +319,22 @@
   }
 
   .mogan-post-detail > div {
-    padding: 0 20px;
+    padding: 0;
   }
 }
 
 @media (max-width: 420px) {
   .mogan-post-detail > div {
     padding: 0 10px;
+  }
+  
+  #mogan-post-comments {
+    padding: 30px 0 7px 0;
+  }
+  
+  .mogan-post-detail .content, .mogan-post-detail footer>.author, .mogan-post-detail header {
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
 
