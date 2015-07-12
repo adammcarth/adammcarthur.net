@@ -190,8 +190,8 @@
   font-size: 40px;
 }
 .mogan-post-detail header .meta {
-  font-size: 18px;
-  font-family: "Vollkorn", serif;
+  font-size: 14px;
+  font-family: Helvetica, "Helvetica", Crimson, sans-serif;
   color: #bababa;
   text-transform: uppercase;
   margin-top: 30px;
@@ -224,7 +224,7 @@
   }
 
   .meta {
-    font-size: 16px !important;
+    font-size: 12px !important;
   }
 }
 
