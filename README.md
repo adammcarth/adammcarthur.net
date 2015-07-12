@@ -2,7 +2,7 @@
 
 ![Adam McArthur Website](http://imgkk.com/i/nrys.jpg "http://adammcarthur.net")
 
-This is a repository for my website located at [http://adammcarthur.net](http://adammcarthur.net).
+This is a repository for my website located at [https://adammcarthur.net](https://adammcarthur.net).
 
 My blog is powered by a relatively new blogging platform called [Ghost](https://ghost.org), which runs on Node.js. The design builds on top of an original idea by [Kevin Jannis](http://www.kevinjannis.com).
 
