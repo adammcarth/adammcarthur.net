@@ -121,6 +121,7 @@ abbr[title] {
 b,
 strong {
   font-weight: bold;
+  font-size: 95%;
 }
 
 /**
@@ -818,10 +819,12 @@ h6 {
   margin: 20px 0;
 }*/
 #mogan-header .meta h1 {
+  font-family: Crimson, sans-serif;
   margin: 0;
   font-size: 1.9em;
 }
 #mogan-header .meta h3 {
+  font-family: Crimson, sans-serif;
   font-size: 18px;
   margin: 10px 0 0 0;
 }
@@ -831,6 +834,8 @@ h6 {
   padding: 25px 0;
 }
 #mogan-header nav a {
+  font-size: 19px;
+  font-family: Crimson, sans-serif;
   position: relative;
   display: block;
   text-decoration: none;
